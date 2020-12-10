@@ -1,12 +1,14 @@
 :root {
-  --clr-bg: blue;
-  --font-p: "Cuprum";
+  --clr-bg: rgb(0, 33, 105);
+  --font-p: "Cuprum", sans-serif;
   --clr-txt: rgb(1, 33, 105);
+  --clr-bg2: #4c84ac;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,24 +23,21 @@ img {
 navigatiebalk en -menu
 ------------------------------------ */
 
-header {
-  display: flex;
-  flex-direction: column;
+.navbar {
+  width: 100vw;
+  background-color: var(--clr-bg);
+  position: fixed;
+  text-align: right;
+  z-index: 99;
 }
 
-header button {
-  display: block;
-  position: fixed;
+.navbar button {
   border: none;
-  background: none;
-  color: white;
-  font-size: 1.25em;
-  font-weight: bold;
-  width: 100vw;
-  text-align: right;
-  padding: 1em;
   background: var(--clr-bg);
-  z-index: 99;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  padding: 1em;
 }
 
 nav {
@@ -48,20 +47,23 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   color: white;
-  font-size: 2em;
+  align-items: center;
 
-  /* Tijdelijk voor opmaak */
-  /* display: none; */
+  display: none;
 }
 
 nav ul {
   list-style-type: none;
+  font-size: 2em;
+  font-family: var(--font-p);
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  text-align: center;
 }
 
-nav ul li {
+nav li {
   margin: 1em;
 }
 
@@ -122,22 +124,141 @@ section:nth-of-type(1) h1 {
 /* ------------------------------------
 section Producten
 ------------------------------------ */
-section:nth-of-type(2) h2 {
+
+section:nth-of-type(2) ul {
+  list-style-type: none;
   text-align: center;
+  overflow-x: auto;
+  display: flex;
+  padding: 2em 0;
+  scroll-snap-type: x mandatory;
+}
+
+section:nth-of-type(2) li {
+  width: 100vw;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+section:nth-of-type(2) ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: var(--clr-bg);
+  padding: 0.75em 1em;
+  border-radius: 2em;
+}
+
+/* ------------------------------------
+section Bron
+------------------------------------ */
+
+section:nth-of-type(3) {
+  background-color: var(--clr-bg2);
+  text-align: center;
+  color: white;
+  padding: 5em 1em;
+  margin-bottom: 0;
+}
+
+section:nth-of-type(3) h2 {
+  margin: 1em;
   font-size: 2em;
 }
 
-.producten-slider {
-  overflow-x: auto;
+section:nth-of-type(3) p {
+  font-size: 1.2em;
+  line-height: 1.25em;
+  margin: 1.5em 1em 3em;
+}
+section:nth-of-type(3) a {
+  background: white;
+  padding: 0.75em 4em;
+  text-decoration: none;
+  margin: 3em 2em;
+  border-radius: 2em;
+  color: var(--clr-txt);
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+/* ------------------------------------
+section animatie, beetje useless maar wel op de website
+------------------------------------ */
+
+section:nth-of-type(4) {
+  margin: 0 0 1em;
+  padding: 1em;
+  background-image: linear-gradient(to top, var(--clr-bg) 70%, white 70%);
+}
+
+section:nth-of-type(4) h2 {
+  color: white;
+  font-size: 2em;
+  line-height: normal;
+  margin: 1em 0;
+}
+
+/* ------------------------------------
+Vraag of opmerking?
+------------------------------------ */
+
+section:nth-of-type(5) {
+  margin: 0;
+  padding: 10em 0;
+  background-image: url("../img/surfBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+section:nth-of-type(5) h2 {
+  color: white;
+  font-size: 4em;
+  line-height: normal;
+  margin-bottom: 1em;
+}
+
+section:nth-of-type(5) a {
+  background: white;
+  padding: 1em 5em;
+  text-decoration: none;
+  border-radius: 2em;
+  color: var(--clr-txt);
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+/* ------------------------------------
+Footer
+------------------------------------ */
+
+footer {
+  background: var(--clr-bg);
+  color: white;
+  font-family: var(--font-p);
+  text-align: center;
+}
+
+footer img {
+  margin: 1em 0 0;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 2em 0;
+  height: 10em;
+  font-size: 1.25em;
+  text-decoration: underline;
   display: flex;
-  overflow-x: scroll;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.producten-slider div {
-  width: 100vw;
-  position: relative;
-}
-
-section:nth-of-type(3) {
-  background-color: rgb(174, 198, 250);
+footer p {
+  background-color: rgb(0, 23, 73);
+  color: gray;
+  padding: 1em 1em 1em;
+  font-size: 1.25em;
 }

@@ -24,7 +24,35 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+Beide pagina's bevatten hun opmaak zoals de website van Sourcy zelf eruit ziet. Inmiddels is met wat hulp het horizontale scroll element ook gelukt. Nu gaan beginnen met Javascript en de surface plane. Verder was het deze week moeilijk om motivatie te krijgen om aan het werk te gaan. Ik vind het moeilijk om hard aan de slag te gaan en ben eigenlijk toe aan vakantie voor mijn gevoel.
+
+Qua semantiek e.e.a. aangepast in de html wat voor wat moeilijkheden zorgde bij de sliders, maar dat is opgelost.
+
+**Screenshot(s):**
+
+_Screenshot 1_
+
+<img src="./img/voortgang/voortgang2.1.png" width= "375px" alt="Hoofdpagina volledig opgemaakt.">
+
+De eerste pagina is volledig opgemaakt zoals die van Sourcy.
+
+_Screenshot 2_
+
+<img src="./img/voortgang/voortgang2.2.png" width="375px" alt="De productpagina volledig weergegeven.">
+
+Productpagina is ook werkend, alleen de onderste producten slider werkt niet altijd mee. De ene keer geeft ie wel goed weer en soms loopt die net scheef. Deze moet ik nog even aandacht geven.
+
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+| Kai                                          | Nienke | Lisa | Jeroen |
+| -------------------------------------------- | ------ | ---- | ------ |
+| Hoe veel wordt verwacht van de surface plane |        |      |        |
+| Mag je libraries gebruiken?                  |        |      |        |
+|                                              |        |      |        |
 
 ## Voortgang 1 (week 3)
 
@@ -60,7 +88,9 @@ De productenslider werkt in principe. Alleen de knoppen moeten nog gepositioneer
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Semantiek kan beter, verder zijn we goed bezig. Wat betreft de overeenkomsten hoeft het niet 1 op 1 te zijn, er mag een kleine variatie in zitten. Hierna ga je tenslotte met de surface plane aan de slag, dus als het goed is komt het er ook anders uit te zien.
+
+Div's veranderd in ul > li, en enkele h1 veranderd in h2.
 
 ## Breakdownschets (week 1)
 
