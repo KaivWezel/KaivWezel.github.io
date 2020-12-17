@@ -48,11 +48,11 @@ Productpagina is ook werkend, alleen de onderste producten slider werkt niet alt
 
 -samen met je groepje opstellen-
 
-| Kai                                          | Nienke | Lisa | Jeroen |
-| -------------------------------------------- | ------ | ---- | ------ |
-| Hoe veel wordt verwacht van de surface plane |        |      |        |
-| Mag je libraries gebruiken?                  |        |      |        |
-|                                              |        |      |        |
+| Kai                                          | Nienke                      | Lisa                             | Jeroen             |
+| -------------------------------------------- | --------------------------- | -------------------------------- | ------------------ |
+| Hoe veel wordt verwacht van de surface plane | Advies op css en javascript | Tips over animeren en javascript | Footer en carousel |
+| Mag je libraries gebruiken?                  | Niet ver, nog ombouwen      |                                  | Code oke?          |
+|                                              |                             |                                  |                    |
 
 ## Voortgang 1 (week 3)
 

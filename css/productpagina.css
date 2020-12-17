@@ -1,0 +1,224 @@
+:root {
+  --clr-bg: rgb(0, 33, 105);
+  --font-p: "Cuprum", sans-serif;
+  --clr-txt: rgb(1, 33, 105);
+  --clr-bg2: #0084d4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-p);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ------------------------------------
+navigatiebalk en -menu
+------------------------------------ */
+
+.navbar {
+  width: 100vw;
+  background-color: var(--clr-bg);
+  position: fixed;
+  text-align: right;
+  z-index: 99;
+}
+
+.navbar button {
+  border: none;
+  background: var(--clr-bg);
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  padding: 1em;
+}
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 2em;
+  font-family: var(--font-p);
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  text-align: center;
+}
+
+nav li {
+  margin: 1em;
+}
+
+/* ------------------------------------
+Header
+------------------------------------ */
+
+header {
+  background-color: var(--clr-bg2);
+  padding: 4em 1em 1em;
+  text-align: center;
+  line-height: normal;
+}
+
+/* ------------------------------------
+Main en sections overall
+------------------------------------ */
+main {
+  line-height: 22px;
+  font-family: var(--font-p), sans-serif;
+  color: var(--clr-txt);
+}
+
+section {
+  padding: 0em 1.25em;
+}
+section ~ section {
+  margin: 1em 0;
+}
+
+/* ------------------------------------
+beschrijving
+------------------------------------ */
+
+section:nth-of-type(1) {
+  padding-top: 10em;
+  text-align: center;
+}
+
+section:nth-of-type(1) img:last-of-type {
+  transform: rotate(-90deg);
+  margin: 2em 0;
+  color: var(--clr-bg);
+}
+
+/* ------------------------------------
+Table
+------------------------------------ */
+
+section:nth-of-type(2) {
+  padding: 1em;
+  text-align: center;
+}
+section:nth-of-type(2) table {
+  border: 2px solid var(--clr-bg);
+  padding: 1em;
+  text-align: left;
+  position: relative;
+  margin: 3em 0;
+}
+
+section:nth-of-type(2) table::before,
+section:nth-of-type(2) table::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background: var(--clr-bg);
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+table::before {
+  top: -1em;
+}
+
+table::after {
+  bottom: -1em;
+}
+
+table th {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+td + td {
+  text-align: right;
+}
+
+section:nth-of-type(2) a {
+  text-decoration: none;
+  background-color: var(--clr-bg);
+  padding: 0.75em 5em;
+  border-radius: 2em;
+  color: white;
+}
+
+/* ------------------------------------
+Slider 2
+------------------------------------ */
+section:nth-of-type(3) ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  overflow-x: hidden;
+  padding: 1em;
+  justify-content: flex-start;
+}
+
+section:nth-of-type(3) li {
+  width: 100vw;
+  /* flex-basis: auto; */
+  flex-shrink: 0;
+  margin: auto;
+}
+
+section:nth-of-type(3) a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--clr-bg2);
+  padding: 0.75em 4em;
+  border-radius: 2em;
+}
+
+/* ------------------------------------
+Footer
+------------------------------------ */
+footer {
+  background: var(--clr-bg);
+  color: white;
+  font-family: var(--font-p);
+  text-align: center;
+}
+
+footer img {
+  margin: 1em 0 0;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 2em 0;
+  height: 10em;
+  font-size: 1.25em;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer p {
+  background-color: rgb(0, 23, 73);
+  color: gray;
+  padding: 1em 1em 1em;
+  font-size: 1.2 5em;
+}

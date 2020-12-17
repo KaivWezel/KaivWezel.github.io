@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -12,29 +12,33 @@
   </head>
   <body>
     <div class="navbar">
-      <button id="menu">menu</button>
+      <button>menu</button>
     </div>
     <nav>
       <ul>
-        <li>Hydrateren</li>
-        <li>Voedingsstoffen</li>
-        <li>Ons verhaal</li>
-        <li>Producten</li>
+        <li><a href="">Hydrateren</a></li>
+        <li><a href="">Voedingsstoffen</a></li>
+        <li><a href="">Ons verhaal</a></li>
+        <li><a href="">Producten</a></li>
       </ul>
     </nav>
     <main>
-      <header>
+      <header class="product">
         <h2>Direct gebotteld aan de bron</h2>
         <h1>Naturel</h1>
       </header>
       <section>
-        <img src="./img/mineraalwater.png" alt="naturel bronwater in flex" />
+        <img
+          src="./img/mineraalwater.png"
+          alt="naturel bronwater in flex"
+          class="naturel"
+        />
         <p>
           Sourcy mineraalwater is van nature zuiver en heeft een zacht karakter
           door de evenwichtige mineralenbalans. Sourcy mineraalwater wordt
           direct aan de bron gebotteld.
         </p>
-        <img src="./img/arrow.png" width="20px" alt="" />
+        <img src="./img/arrow.png" width="20px" alt="" class="scroll-down" />
       </section>
       <section>
         <table>
@@ -130,12 +134,13 @@
     <footer>
       <img src="./img/sourcy_logo.png" width="100px" alt="logo sourcy" />
       <ul>
-        <li><a>Vrumona.nl</a></li>
-        <li><a>Algemene Voorwaarden</a></li>
-        <li><a>Privacy & cookie statement</a></li>
-        <li><a>contact</a></li>
+        <li><a href="">Vrumona.nl</a></li>
+        <li><a href="">Algemene Voorwaarden</a></li>
+        <li><a href="">Privacy & cookie statement</a></li>
+        <li><a href="">contact</a></li>
       </ul>
       <p>© 2020 Sourcy | Jouw aanvulling op een Gezonde Levensstijl</p>
     </footer>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

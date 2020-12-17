@@ -49,8 +49,14 @@ nav {
   justify-content: center;
   color: white;
   align-items: center;
+  position: fixed;
+  z-index: 98;
 
-  display: none;
+  opacity: 0;
+  transform: scale(0, 0);
+  transform-origin: top right;
+  pointer-events: none;
+  transition: 0.2s ease;
 }
 
 nav ul {
@@ -67,11 +73,21 @@ nav li {
   margin: 1em;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: scale(1, 1);
+}
 /* ------------------------------------
 Hero
 ------------------------------------ */
 
-header div {
+header.main {
   height: 70vh;
   width: 100%;
   display: flex;
@@ -86,6 +102,13 @@ header div {
 
 header div img {
   width: 25%;
+}
+
+header.product {
+  background-color: var(--clr-bg2);
+  padding: 4em 1em 1em;
+  text-align: center;
+  line-height: normal;
 }
 
 /* ------------------------------------
@@ -109,11 +132,6 @@ section ~ section {
 section intro
 ------------------------------------ */
 
-section:nth-of-type(1) > img {
-  transform: translateY();
-  z-index: -1;
-}
-
 section:nth-of-type(1) h1 {
   font-size: 2em;
   line-height: 1em;
@@ -124,6 +142,10 @@ section:nth-of-type(1) h1 {
 /* ------------------------------------
 section Producten
 ------------------------------------ */
+section:nth-of-type(2) h2 {
+  text-align: center;
+  font-size: 2em;
+}
 
 section:nth-of-type(2) ul {
   list-style-type: none;
@@ -222,7 +244,7 @@ section:nth-of-type(5) h2 {
 
 section:nth-of-type(5) a {
   background: white;
-  padding: 1em 5em;
+  padding: 0.75em 5em;
   text-decoration: none;
   border-radius: 2em;
   color: var(--clr-txt);
@@ -262,3 +284,124 @@ footer p {
   padding: 1em 1em 1em;
   font-size: 1.25em;
 }
+
+footer a {
+  color: white;
+}
+/* ===================================
+------------------------------------
+Productpagina
+------------------------------------
+=================================== */
+
+/* ------------------------------------
+Header
+------------------------------------ */
+
+header.product ~ section:nth-of-type(1) {
+  text-align: center;
+}
+
+img.naturel {
+  margin-top: 5em;
+}
+
+img.scroll-down {
+  margin-top: 1em;
+  transform: rotate(-90deg);
+}
+
+/* ------------------------------------
+Tabel
+------------------------------------ */
+
+header.product ~ section:nth-of-type(2) {
+  text-align: center;
+}
+
+section:nth-of-type(2) table {
+  border: 2px solid var(--clr-bg);
+  padding: 1em;
+  text-align: left;
+  position: relative;
+  margin: 3em 0;
+}
+
+section:nth-of-type(2) table::before,
+section:nth-of-type(2) table::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background: var(--clr-bg);
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+table::before {
+  top: -1em;
+}
+
+table::after {
+  bottom: -1em;
+}
+
+table th {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+td + td {
+  text-align: right;
+}
+
+header.product ~ section:nth-of-type(2) a {
+  text-decoration: none;
+  background-color: var(--clr-bg);
+  padding: 0.75em 5em;
+  border-radius: 2em;
+  color: white;
+}
+
+/* ------------------------------------
+Slider 2
+------------------------------------ */
+
+header.product ~ section:nth-of-type(3) {
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: var(--clr-p);
+}
+
+header.product ~ section:nth-of-type(3) ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  overflow-x: auto;
+  padding: 3em 0;
+  justify-content: flex-start;
+  scroll-snap-type: x mandatory;
+}
+
+header.product ~ section:nth-of-type(3) li {
+  width: 100vw;
+  /* flex-basis: auto; */
+  flex-shrink: 0;
+  margin: auto;
+  scroll-snap-align: center;
+}
+
+header.product ~ section:nth-of-type(3) a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--clr-bg2);
+  padding: 0.75em 4em;
+  border-radius: 2em;
+}
+
+/* ------------------------------------
+make-up classes
+------------------------------------ */
