@@ -96,8 +96,11 @@ header.main {
   background-image: url("../img/Sourcyheader.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 5em;
   border-radius: 0 0 70% 70% / 0 0 5em 5em;
+
+  background-attachment: fixed;
 }
 
 header div img {
@@ -139,12 +142,26 @@ section:nth-of-type(1) h1 {
   margin-bottom: 0.5em;
 }
 
+.desc {
+  transform: translateY(2em);
+  opacity: 0;
+  transition: 1s all ease-out;
+}
+
+.appear {
+  transform: translateY(0em);
+  opacity: 1;
+}
 /* ------------------------------------
 section Producten
 ------------------------------------ */
 section:nth-of-type(2) h2 {
   text-align: center;
   font-size: 2em;
+
+  transform: translateY(3em);
+  opacity: 0;
+  transition: 0.3s ease-out;
 }
 
 section:nth-of-type(2) ul {
@@ -195,7 +212,7 @@ section:nth-of-type(3) p {
 }
 section:nth-of-type(3) a {
   background: white;
-  padding: 0.75em 4em;
+  padding: 0.75em 2em;
   text-decoration: none;
   margin: 3em 2em;
   border-radius: 2em;
@@ -221,6 +238,12 @@ section:nth-of-type(4) h2 {
   margin: 1em 0;
 }
 
+.shake {
+  animation-name: shake;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition-timing-function: cubic-bezier(0, 0.775, 1, 0.26);
+}
 /* ------------------------------------
 Vraag of opmerking?
 ------------------------------------ */
@@ -402,6 +425,22 @@ header.product ~ section:nth-of-type(3) a {
   border-radius: 2em;
 }
 
-/* ------------------------------------
-make-up classes
------------------------------------- */
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  100% {
+  }
+}

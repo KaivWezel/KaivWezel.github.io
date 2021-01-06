@@ -6,21 +6,56 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. -https://www.sourcy.nl/-
+2. -https://developer.mozilla.org/en-US/docs/Web/CSS/transition-
+3. -https://www.youtube.com/watch?v=C_JKlr4WKKs&list=PLDyQo7g0_nsXlSfuoBpG5Fgz0Qe3IvWnA&index=2-
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Deze week alles afgerond en online gezet. De animaties en transities werken. Helaas heb ik de intro-animatie (fade-in) niet zodanig gekregen dat deze op meerdere elementen werkt. Door een wat moeilijke periode heb ik ook niet zoveel kunnen werken aan de website als ik hoopte. Deze heb ik in een privébericht toegelicht bij Danny. Het parallax-effect op de homepagina is ook toegevoegd, dit bleek veel minder werk dan ik dacht.
+Uiteindelijk ben ik wel tevreden met wat ik heb neergezet, maar ik had graag meer willen doen.
+
+### Wat ging goed
+
+Deze periode heb ik erg gemakkelijk de website semantisch correct kunnen opbouwen. De breakdownschets van de website scheelt heel erg en helpt bij het correct inschatten van de semantische waarde van een element. Daarnaast is de opmaak met css een goede oefening en ging ook dit weer sneller en gemakkelijker.
+
+### Wat was lastig
+
+Lastig is om de site natuurlijk exact na te maken. Hier streefde ik in het begin heel erg naar. Ik heb nog geprobeerd om de horizontale slider met knoppen aan de praat te krijgen zodat deze oneindig door draait maar dat is helaas niet gelukt. Andere animaties en transities zijn wel gelukt. Het was ook nog even puzzelen om alle opmaak in één css bestand te krijgen. Ik had gewerkt met twee bestanden, elke pagina zijn eigen bestand.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+_Screenshot 1_
+
+<img src="./img/voortgang/fade-in.jpg" width= "375px" alt="Element komt in 'faden' wanneer het in het schermbereik komt.">
+
+_Screenshot 2_
+
+<img src="./img/voortgang/fadein.gif" width= "375px" alt="Eerste element komt in faden">
+
+_Screenshot 3_
+
+<img src="./img/voortgang/schudden.gif" width= "375px" alt="flesje schudt heen en weer.">
+
+_Screenshot 4_
+
+<img src="./img/voortgang/menu.gif" width= "375px" alt="Element komt in 'faden' wanneer het in het schermbereik komt.">
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Begonnen met de het werkend krijgen van het menu. Het menu wordt nu in het scherm geanimeerd op beide pagina's. Met de javascript wacht ik op een klik om zo een class toe te voegen aan het navigatie-element. De animatie maakt duidelijk waar het menu vandaan komt en dat het over de pagina heen ligt. Ook ben ik begonnen met het maken van een intro-animatie voor tekst elementen. Deze werkt op het moment alleen nog niet.
+
+In de komende weken (vakantie) wil ik nog aan de slag met die transition en een animatie toevoegen aan de pagina.
+
+**Screenshot(s):**
+
+_Screenshot 1_
+
+<img src="./img/voortgang/menu.jpg" width= "375px" alt="Menu over de pagina heen gelegd.">
+
+_Screenshot 2_
 
 ## Voortgang 2 (week 5)
 
